@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+
+    <table border="1">
+        <tr>
+            <td>Nome</td>
+            <td>Preço</td>
+            <td>Avaliação</td>
+        </tr>
+        <tr>
+            <td>lapis</td>
+            <td>3</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>hidrocor</td>
+            <td>6</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Canetas</td>
+            <td>2</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>papel</td>
+            <td>3</td>
+            <td>9</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
