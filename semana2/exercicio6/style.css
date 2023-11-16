@@ -1,0 +1,86 @@
+#caixa{
+    position: relative;
+    background-color: brown;
+    width: 50px;
+    height: 50px;
+    left: 10px;
+    top: 10px
+}
+#caixa2{
+    position: relative;
+    background-color: rgb(42, 165, 97);
+    width: 50px;
+    height: 50px;
+    left: 10px;
+    top: 10px
+}
+#caixa3{
+    position: relative;
+    background-color: rgb(155, 165, 42);
+    width: 50px;
+    height: 50px;
+    left: 10px;
+    top: 10px
+}
+#caixa4{
+    position: relative;
+    background-color: rgb(153, 42, 165);
+    width: 50px;
+    height: 50px;
+    left: 10px;
+    top: 10px
+}
+#caixa5{
+    position: relative;
+    background-color: rgb(42, 165, 42);
+    border: color(srgb red green blue);
+    width: 50px;
+    height: 50px;
+    left: 10px;
+    top: 10px
+}
+#caixa6{
+    position: relative;
+    background-color: rgb(165, 126, 42);
+    width: 50px;
+    height: 50px;
+    left: 10px;
+    top: 10px
+}
+.cx1{
+    width: 100px;
+    height: 100px;
+    border: black solid;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: blue;
+}
+.cx2{
+    width: 100px;
+    height: 100px;
+    border: black solid;
+    border-radius: 70%;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(0, 255, 110);
+}
+.cx3{
+    width: 100px;
+    height: 100px;
+    border: black solid;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(0, 255, 110);
+}
+.cx4{
+    width: 50px;
+    height: 50px;
+    border: black solid;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-color: rgb(0, 153, 255);
+}
