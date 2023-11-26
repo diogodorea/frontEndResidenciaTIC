@@ -78,3 +78,13 @@ main {
   margin-bottom: 1rem;
 }
 
+.rodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+  background-color: #c26ddc95;
+  padding: 1.875rem;
+}
+
+
