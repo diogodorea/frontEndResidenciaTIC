@@ -68,6 +68,22 @@ main {
   gap: .625rem;
 }
 
+li {
+ list-style: none;
+ margin-bottom: .2rem;
+}
+
+/* Estilos específicos para a seção de destaque */
+.destaque ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.destaque img {
+  width: 6.25rem;
+}
 
 .container2 {
   display: grid;
