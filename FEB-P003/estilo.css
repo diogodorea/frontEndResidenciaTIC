@@ -51,6 +51,41 @@ ul li {
     align-items: center;
 }
 
+ul li::before {
+    content: '\2713'; 
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+ul li {
+    padding: 8px 0;
+    margin-left: 15px;
+    font-family: "OpenSans";
+}
+
+div {
+    margin-top: 10px;
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    font-weight: bold;
+}
+
+span {
+    display: block;
+    margin-top: 5px;
+}
 
 button {
     background-color: #6728fa;
@@ -61,4 +96,18 @@ button {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.2s;
+}
+
+@media screen and (min-width: 1200px) {
+    .card {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
 }
