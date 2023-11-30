@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form>
+    <label for="task">Tarefa:</label>
+    <input type="text" id="task" name="task">
+    <button type="submit" id="adicionarTarefa">Adicionar Tarefa</button>
+</form>
+<ul id="listaTarefas">
+    <li>Estudar HTML</li>
+    <li>Estudar CSS</li>
+    <li>Estudar JavaScript</li>
+</ul>
+<script>
+    class Tarefa {
+        constructor(nome) {
+            this.nome = nome;
+        }
+    }
+
+    function adicionaTarefaDOM(tarefa) {
+        const listaTarefas = document.getElementById("listaTarefas");
+        const novaTarefa = document.createElement("li");
+        novaTarefa.textContent = tarefa.nome;
+        listaTarefas.appendChild(novaTarefa);
+    }
+
+    function adicionaTarefaNoStorage(tarefa) {
+        const tarefas = JSON.parse(localStorage.getItem("tarefas")) || [];
+        tarefas.push(tarefa);
+        localStorage.setItem("tarefas", JSON.stringify(tarefas));
+    }
+
+    const adicionarTarefaBtn = document.getElementById("adicionarTarefa");
+    adicionarTarefaBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        const tarefaInput = document.getElementById("task");
+        const tarefaNome = tarefaInput.value;
+        const novaTarefa = new Tarefa(tarefaNome);
+        adicionaTarefaDOM(novaTarefa);
+        adicionaTarefaNoStorage(novaTarefa);
+        tarefaInput.value = "";
+    });
+</script>
+
+</body>
+</html>
+
+
