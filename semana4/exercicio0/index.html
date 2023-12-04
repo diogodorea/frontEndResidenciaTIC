@@ -36,6 +36,13 @@
         localStorage.setItem("tarefas", JSON.stringify(tarefas));
     }
 
+    function carregaTarefasDoStorage() {
+        const tarefas = JSON.parse(localStorage.getItem("tarefas")) || [];
+        tarefas.forEach(tarefa => {
+            adicionaTarefaDOM(tarefa);
+        });
+    }
+
     const adicionarTarefaBtn = document.getElementById("adicionarTarefa");
     adicionarTarefaBtn.addEventListener("click", function(event) {
         event.preventDefault();
@@ -46,6 +53,8 @@
         adicionaTarefaNoStorage(novaTarefa);
         tarefaInput.value = "";
     });
+
+    carregaTarefasDoStorage();
 </script>
 
 </body>
