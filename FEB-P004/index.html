@@ -8,6 +8,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const buttons = document.querySelectorAll('.btn');
+        
+        buttons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                const card = button.closest('.card');
+                const header = card.querySelector('header');
+                const img = header.querySelector('img').getAttribute('src');
+                const title = header.querySelector('h3').textContent;
+                const listItems = card.querySelectorAll('ul li');
+                const details = card.querySelector('div');
+                const price = details.querySelector('h2').textContent;
+                const taxIncluded = details.querySelector('span').textContent;
+                const installment = details.querySelector('span').textContent;
+                
+                const packageInfo = {
+                    image: img,
+                    title: title,
+                    items: Array.from(listItems).map(item => item.textContent),
+                    price: price,
+                    taxIncluded: taxIncluded,
+                    installment: installment
+                };
+                
+                console.log(packageInfo);
+            });
+        });
+    });
+    </script>
 <body>
     <div class="container">
         <div class="card">
@@ -27,7 +57,7 @@
                     <span>Em até 10X sem Juros</span>
                 </div>  
             </main>
-            <button>Comprar</button>
+            <button class="btn">Comprar</button>
         </div>
         <div class="card">
             <header>
@@ -46,7 +76,7 @@
                     <span>Em até 10X sem Juros</span>
                 </div>  
             </main>
-            <button>Comprar</button>
+            <button class="btn">Comprar</button>
         </div>
         <div class="card">
             <header>
@@ -65,7 +95,7 @@
                     <span>Em até 10X sem Juros</span>
                 </div>  
             </main>
-            <button>Comprar</button>
+            <button class="btn">Comprar</button>
         </div>
     </div>
 </body>
