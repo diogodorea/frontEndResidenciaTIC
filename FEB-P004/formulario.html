@@ -14,23 +14,16 @@
         
         <label for="cidade">Cidade:</label>
         <input type="text" id="cidade" name="cidade" required>
-    
-        <label for="informação1">Informação 1:</label>
-        <input type="text" id="informação1" name="informação1" required>
-    
-        <label for="informação2">Informação 2:</label>
-        <input type="text" id="informação2" name="informação2" required>
-    
-        <label for="informação3">Informação 3:</label>
-        <input type="text" id="informação3" name="informação3" required>
-    
+   
         <label for="text">Valor:</label>
         <input type="text" id="valor" name="valor" required>
     
         <label for="pacote">Pacote Turístico:</label>
         <input type="text" id="pacote" name="pacote" required>
     
-        <input type="submit" value="Enviar">
+        <input type="button" value="Enviar" onclick="capturarInformacoes()">
     </form>
+    <script src="formscript.js"></script>
+    <div id="Destino"></div>
 </body>
 </html>

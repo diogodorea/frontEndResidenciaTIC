@@ -32,12 +32,12 @@ input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-#containerDestinos {
+#Destinos {
     max-width: 800px;
     margin: 20px auto;
 }
 
-#containerDestinos div {
+#Destinos div {
     background-color: #fff;
     margin-bottom: 10px;
     padding: 10px;
@@ -45,7 +45,7 @@ input[type="submit"]:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#containerDestinos {
+#Destinos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
