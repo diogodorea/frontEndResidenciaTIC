@@ -1,70 +1,36 @@
-<!-- BEGIN: /D:/Residência Software TIC 18/Sources/frontEndResidenciaTIC/FEB-P004/formulario.html -->
-<style>
-    /* FILEPATH: /D:/Residência Software TIC 18/Sources/frontEndResidenciaTIC/FEB-P004/formulario.html */
-    /* BEGIN: css-format */
-    form {
-        display: flex;
-        flex-direction: column;
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
-    label {
-        margin-bottom: 5px;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    input[type="url"] {
-        padding: 5px;
-        margin-bottom: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
-
-    input[type="submit"] {
-        padding: 10px;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    input[type="submit"]:hover {
-        background-color: #0056b3;
-    }
-    /* END: css-format */
-</style>
-
-<script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo2.css">
+    <title>formulario</title>
+</head>
+<body>
     
-</script>
-
-<form>
-    <label for="imagem">URL da Imagem:</label>
-    <input type="url" id="imagem" name="imagem" required>
+    <form>
+        <label for="imagem">URL da Imagem:</label>
+        <input type="url" id="imagem" name="imagem" required>
+        
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required>
     
-    <label for="cidade">Cidade:</label>
-    <input type="text" id="cidade" name="cidade" required>
-
-    <label for="informação1">Informação 1:</label>
-    <input type="text" id="informação1" name="informação1" required>
-
-    <label for="informação2">Informação 2:</label>
-    <input type="text" id="informação2" name="informação2" required>
-
-    <label for="informação3">Informação 3:</label>
-    <input type="text" id="informação3" name="informação3" required>
-
-    <label for="text">Valor:</label>
-    <input type="text" id="valor" name="valor" required>
-
-    <label for="pacote">Pacote Turístico:</label>
-    <input type="text" id="pacote" name="pacote" required>
-
-    <input type="submit" value="Enviar">
-</form>
-
-<!-- END: /D:/Residência Software TIC 18/Sources/frontEndResidenciaTIC/FEB-P004/formulario.html -->
+        <label for="informação1">Informação 1:</label>
+        <input type="text" id="informação1" name="informação1" required>
+    
+        <label for="informação2">Informação 2:</label>
+        <input type="text" id="informação2" name="informação2" required>
+    
+        <label for="informação3">Informação 3:</label>
+        <input type="text" id="informação3" name="informação3" required>
+    
+        <label for="text">Valor:</label>
+        <input type="text" id="valor" name="valor" required>
+    
+        <label for="pacote">Pacote Turístico:</label>
+        <input type="text" id="pacote" name="pacote" required>
+    
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
