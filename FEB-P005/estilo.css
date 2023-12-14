@@ -77,6 +77,12 @@ main {
   gap: .625rem;
 }
 
+.apinoticia {
+  display: flex;
+  flex-direction: column;
+  gap: .625rem;
+}
+
 li {
  list-style: none;
  margin-bottom: .2rem;
