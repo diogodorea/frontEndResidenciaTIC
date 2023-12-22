@@ -1,0 +1,22 @@
+*{
+    background-color: darkgoldenrod;
+}
+
+.menu{
+    border: 4px solid rgba(18, 116, 152, 0.442);
+    padding: .5rem;
+}
+
+.header{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.23);
+    margin-bottom: .5rem;
+}
+
+ul{
+    
+}
+
+li {
+    list-style: none;
+    margin-bottom: .2rem;
+   }
