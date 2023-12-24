@@ -19,4 +19,23 @@ ul{
 li {
     list-style: none;
     margin-bottom: .2rem;
-   }
+}
+
+li > img {
+    max-width:150px;
+    max-height:100px;
+
+}
+
+h1, h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(36, 39, 43);
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+}

@@ -9,14 +9,23 @@
 
 .header{
     border-bottom: 1px solid rgba(0, 0, 0, 0.23);
-    margin-bottom: .5rem;
-}
-
-ul{
-    
+    margin-bottom: .2rem;
 }
 
 li {
     list-style: none;
-    margin-bottom: .2rem;
+    margin-bottom: .5rem;
    }
+
+   h1, h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(36, 39, 43);
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+}
