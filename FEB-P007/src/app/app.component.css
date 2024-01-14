@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: .3rem;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(91, 98, 107);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:0.5rem;
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
